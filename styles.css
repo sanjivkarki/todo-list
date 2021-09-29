@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(
+    132.6deg,
+    rgba(71, 139, 214, 1) 23.3%,
+    rgba(37, 216, 211, 1) 84.7%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#todo-list {
+  width: 60vh;
+  margin: 100px auto;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #e8e7e7;
+  justify-content: center;
+  border-radius: 5px;
+  background: #e8e7e7;
+}
+
+.container {
+  width: 80%;
+}
+
+header {
+  color: white;
+  background-color: #1b1b1b;
+  padding: 15px 0;
+  width: 100%;
+  text-align: center;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.inputField {
+  width: 100%;
+  display: flex;
+}
+
+.inputField input {
+  border: 1px solid #c7bcf8;
+  padding: 10px;
+  flex: 1;
+  outline: none;
+}
+
+.inputField button {
+  width: 40px;
+  outline: none;
+  border: none;
+  background-color: #5b45b9;
+  color: #ffffff;
+  border-radius: 0 5px 5px 0;
+}
+
+.inputField button:hover {
+  background-color: #2f2366;
+  cursor: pointer;
+}
+
+.inputField .inactive {
+  cursor: not-allowed;
+}
+
+.ul-list {
+  width: 100%;
+  position: relative;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.ul-list li {
+  color: #2f2366;
+  list-style-type: none;
+  line-height: 40px;
+  margin: 5px 0;
+  background-color: #eeeeee;
+  padding-left: 10px;
+  border-radius: 3px;
+  text-overflow: ellipsis;
+}
+
+.ul-list i {
+  position: absolute;
+  right: -100px;
+  display: none;
+}
+
+.ul-list li:hover i {
+  right: 0px;
+  display: inline-block;
+}
+
+.ul-list li i {
+  padding: 13px;
+  background-color: #c30101;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 15px;
+  border-radius: 0 3px 3px 0;
+}
+
+.footer {
+  width: 100%;
+  background-color: #5b45b9;
+  color: #ffffff;
+  padding: 15px;
+  position: relative;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+
+.footer button {
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  color: #5b45b9;
+  background-color: #eeeeee;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  margin-top: 9px;
+  cursor: pointer;
+}
+
+.footer button:hover {
+  background-color: #1b1b1b;
+  color: #ffffff;
+}
